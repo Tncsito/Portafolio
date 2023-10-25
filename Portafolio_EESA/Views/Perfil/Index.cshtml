@@ -1,0 +1,21 @@
+﻿@model List<Perfil>
+
+<h1>Lista de Personas</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Teléfono</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+            <tr>
+                <td>@person.Id</td>
+                <td>@person.Nombres</td>
+                <td>@person.Apellidos</td>
+                <td>@person.Telefono</td>
+            </tr>
+    }
+</table>
