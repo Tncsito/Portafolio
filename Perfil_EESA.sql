@@ -18,6 +18,12 @@ BEGIN
     VALUES (@Nombres, @Apellidos, @Telefono);
 END;
 
+Create procedure sp_listar
+as
+begin
+	select * from Perfil;
+end
+
 exec SP_InsertarAlumno
 @Nombres = 'Eduardo Enrique',
 @Apellidos = 'Santoyo Aguilera',

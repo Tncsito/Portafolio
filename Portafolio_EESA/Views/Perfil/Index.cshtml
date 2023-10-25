@@ -1,6 +1,6 @@
 ﻿@model List<Perfil>
 
-<h1>Lista de Personas</h1>
+<h1>Mi Información</h1>
 
 <table>
     <tr>
@@ -9,13 +9,13 @@
         <th>Apellido</th>
         <th>Teléfono</th>
     </tr>
-    @foreach (var person in Model)
+    @foreach (var perfil in Model)
     {
             <tr>
-                <td>@person.Id</td>
-                <td>@person.Nombres</td>
-                <td>@person.Apellidos</td>
-                <td>@person.Telefono</td>
+                <td>@perfil.Id</td>
+                <td>@perfil.Nombres</td>
+                <td>@perfil.Apellidos</td>
+                <td>@perfil.Telefono</td>
             </tr>
     }
 </table>

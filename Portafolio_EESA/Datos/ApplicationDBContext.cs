@@ -11,7 +11,7 @@ namespace Portafolio_EESA.Datos
         {
         }
 
-        public DbSet<Perfil> People { get; set; }
+        public DbSet<Perfil> perfil { get; set; }
     }
 
 }

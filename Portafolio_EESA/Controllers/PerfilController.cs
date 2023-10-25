@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Portafolio_EESA.Datos;
+using Portafolio_EESA.Models;
 
 namespace Portafolio_EESA.Controllers
 {
@@ -13,8 +14,8 @@ namespace Portafolio_EESA.Controllers
         }
         public IActionResult Index()
         {
-            var people = _context.People.ToList();
-            return View(people);
+            var perfil = _context.perfil.ToList();
+            return View(perfil);
         }
 
 
